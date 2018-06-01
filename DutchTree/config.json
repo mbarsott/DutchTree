@@ -1,0 +1,12 @@
+{
+    "ConnectionStrings": {
+        "DutchConnectionString": "server=(localdb)\\ProjectsV13;Database=DutchTreeDb;Integrated Security=true;MultipleActiveResultSets=true;"
+    },
+    "Logging": {
+        "LogLevel": {
+            "Default":  "Error",
+            "DutchTree": "Information",
+            "Microsoft": "Warning"
+        }
+    }
+}

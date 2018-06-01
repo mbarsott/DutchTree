@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dutch Tree</title>
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Dutch Tree</h1>
+    <p>This is going to be a site where we can buy dutch artists merchandise</p>
+    <div class="product-info">
+        <img src="/img/VanGogh.jpg" alt="Van Gogh" />
+        <h3>Mug</h3>
+        <ul class="product-props">
+            <li>Price: $9.99</li>
+            <li>Artist: Van Gogh</li>
+            <li>Title: </li>
+            <li>Description: Self-portrait</li>
+        </ul>
+        <button id="buyButton">Buy</button>
+    </div>
+
+    <div id="theform">
+        <form action="/" method="post">
+            <label>Your Name:</label>
+            <br />
+            <input type="text" name="name" value="" />
+            <br />
+            <label>Email:</label>
+            <br />
+            <input type="email" />
+            <br />
+            <label>Subject:</label>
+            <br />
+            <input type="text" />
+            <br />
+            <textarea rows="4"></textarea>
+            <br />
+            <input type="submit" value="Send Message" />
+        </form>
+    </div>
+
+    <div>
+        <div id="loginToggle">Login</div>
+        <form class="popup-form">
+            <div>
+                <label>Username</label>
+                <input />
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" />
+            </div>
+            <div>
+                <input type="checkbox" />
+                <label>Remember Me?</label>
+            </div>
+            <div><input type="submit" value="Login" /></div>
+        </form>
+    </div>
+
+    <script src="lib/jQuery/dist/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
