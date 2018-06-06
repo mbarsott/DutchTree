@@ -1,4 +1,5 @@
-﻿using DutchTree.Data;
+﻿using AutoMapper;
+using DutchTree.Data;
 using DutchTree.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +27,7 @@ namespace DutchTree
             {
                 cfg.UseSqlServer(conf.GetConnectionString("DutchConnectionString"));
             });
+            services.AddAutoMapper();
             services.AddTransient<IMailService, NullMailService>();
             services.AddTransient<DutchSeeder>();
             services.AddScoped<IDutchRepository, DutchRepository>();
