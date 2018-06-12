@@ -3,6 +3,7 @@ using System.Linq;
 using DutchTree.Data;
 using DutchTree.Services;
 using DutchTree.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DutchTree.Controllers
@@ -54,6 +55,7 @@ namespace DutchTree.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Shop()
         {
             //var results = context.Products
